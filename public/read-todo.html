@@ -15,7 +15,7 @@
         <br>
         <table class="tabe table-bordered table-striped" id="todo_table">
             <tr>
-                <!--<th>User ID</th><-->
+                <th>User ID</th>
                 <th>ID</th>
                 <th>Title</th>
                 <th>Completed</th>
@@ -34,7 +34,7 @@ $(document).ready(function(){
         var todo_data = '';
         $.each(data, function(key, value){
             todo_data += '<tr>';
-            //todo_data += '<td>'+value.userID+'</td>';
+            todo_data += '<td>'+value.userID+'</td>';
             todo_data += '<td>'+value.+'</td>';
             todo_data += '<td>'+value.+'</td>';
             todo_data += '<td>'+value.+'</td>';
