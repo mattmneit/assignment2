@@ -34,10 +34,10 @@ $(document).ready(function(){
         var todo_data = '';
         $.each(data, function(key, value){
             todo_data += '<tr>';
-            todo_data += '<td>'+value.userID+'</td>';
-            todo_data += '<td>'+value.+'</td>';
-            todo_data += '<td>'+value.+'</td>';
-            todo_data += '<td>'+value.+'</td>';
+            todo_data += '<td>'+value.userId+'</td>';
+            todo_data += '<td>'+value.id+'</td>';
+            todo_data += '<td>'+value.title+'</td>';
+            todo_data += '<td>'+value.completed+'</td>';
             todo_data += '</tr>';
         });
         $('#todo_table').append(todo_data);
